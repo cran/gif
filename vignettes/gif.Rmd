@@ -19,7 +19,7 @@ library(gif)
 ```
 
 ## Introduction
-One of the fundamental problems in data mining and statistical analysis is to detect the relationships among a set of variables. To this end, researchers apply undirected graphical models in work, which combine graph theory and probability theory to create networks that model complex probabilistic relationships. By estimating the underlying graphical model, one can capture the direct dependence between variables. In the last few decades, undirected graphical models have attracted numerous attention in various areas such as [genetics](https://www.e-ceo.org/journal/Figure.php?xn=ceo-8-345.xml&id=F2-ceo-8-345&number=394&p_name=1044_394), [neuroscience](http://blog.myesr.org/mri-reveals-the-human-connectome/), [finance](https://networkdatascience.ceu.edu/article/2017-03-13/shock-propagation-and-regulation-interacting-economic-networks), [social science](https://www.sciencedirect.com/topics/computer-science/social-network-analysis) and [machine learning](http://clockworkchaos.com/project7/?q=taxonomy/term/8).
+One of the fundamental problems in data mining and statistical analysis is to detect the relationships among a set of variables. To this end, researchers apply undirected graphical models in work, which combine graph theory and probability theory to create networks that model complex probabilistic relationships. By estimating the underlying graphical model, one can capture the direct dependence between variables. In the last few decades, undirected graphical models have attracted numerous attention in various areas such as [genetics](https://www.e-ceo.org/journal/Figure.php?xn=ceo-8-345.xml&id=F2-ceo-8-345&number=394&p_name=1044_394), [neuroscience](https://blog.myesr.org/mri-reveals-the-human-connectome/), [finance](https://networkdatascience.ceu.edu/article/2017-03-13/shock-propagation-and-regulation-interacting-economic-networks) and [social science](https://www.sciencedirect.com/topics/computer-science/social-network-analysis).
 
 <img src="application.png" width="700">
 
@@ -121,4 +121,4 @@ GPL (>= 2)
 ## Reference
 - Luo, Shikai, Rui Song, and Daniela Witten (2014). [Sure Screening for Gaussian Graphical Models](https://arxiv.org/abs/1407.7819). arXiv preprint arXiv:1407.7819. 
 - Dempster, A.P. (1972). [Covariance Selection](https://www.jstor.org/stable/2528966). Biometrics, 28(1), 157-175. 
-- Fattahi, Salar, and Somayeh Sojoudi. [Graphical Lasso and Thresholding: Equivalence and Closed-form Solutions](http://jmlr.org/papers/v20/17-501.html). Journal of Machine Learning Research 20.10 (2019): 1-44. 
+- Fattahi, Salar, and Somayeh Sojoudi. [Graphical Lasso and Thresholding: Equivalence and Closed-form Solutions](https://jmlr.org/papers/v20/17-501.html). Journal of Machine Learning Research 20.10 (2019): 1-44. 

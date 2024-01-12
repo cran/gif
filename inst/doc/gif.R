@@ -1,4 +1,4 @@
-## ---- echo=FALSE, message=FALSE, warning=FALSE--------------------------------
+## ----echo=FALSE, message=FALSE, warning=FALSE---------------------------------
 knitr::opts_chunk$set(comment = "#", warning = FALSE, eval = TRUE, message = FALSE)
 set.seed(1)
 library(gif)
@@ -6,11 +6,11 @@ library(gif)
 ## ----eval=FALSE---------------------------------------------------------------
 #  install.packages("gif")
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  library(devtools)
 #  install_github("Mamba413/gif/R-package", build_vignettes = TRUE)
 
-## ---- echo=FALSE--------------------------------------------------------------
+## ----echo=FALSE---------------------------------------------------------------
 library(gif)
 
 ## -----------------------------------------------------------------------------
@@ -32,7 +32,7 @@ head(Omega_hat[, 1:6])
 active.entry <- res[["active.entry"]]
 head(active.entry)
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  non_zero_index <- which(as.matrix(Omega) != 0, arr.ind = TRUE)
 #  active.entry <- non_zero_index[which(non_zero_index[,1] < non_zero_index[,2]),]
 #  res <- hgt(x, active.entry = active.entry)

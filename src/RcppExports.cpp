@@ -9,6 +9,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // bcd
 Eigen::SparseMatrix<double> bcd(Eigen::MatrixXd& S, Eigen::MatrixXi& act_set, int iter_max, double eps);
 static SEXP _gif_bcd_try(SEXP SSEXP, SEXP act_setSEXP, SEXP iter_maxSEXP, SEXP epsSEXP) {
@@ -41,7 +46,7 @@ RcppExport SEXP _gif_bcd(SEXP SSEXP, SEXP act_setSEXP, SEXP iter_maxSEXP, SEXP e
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;
@@ -77,7 +82,7 @@ RcppExport SEXP _gif_soft_GT(SEXP SSEXP, SEXP lambdaSEXP, SEXP act_setSEXP) {
     if (rcpp_isError_gen) {
         SEXP rcpp_msgSEXP_gen = Rf_asChar(rcpp_result_gen);
         UNPROTECT(1);
-        Rf_error(CHAR(rcpp_msgSEXP_gen));
+        Rf_error("%s", CHAR(rcpp_msgSEXP_gen));
     }
     UNPROTECT(1);
     return rcpp_result_gen;

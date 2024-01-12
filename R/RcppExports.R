@@ -11,5 +11,5 @@ soft_GT <- function(S, lambda, act_set) {
 
 # Register entry points for exported C++ functions
 methods::setLoadAction(function(ns) {
-    .Call('_gif_RcppExport_registerCCallable', PACKAGE = 'gif')
+    .Call(`_gif_RcppExport_registerCCallable`)
 })
